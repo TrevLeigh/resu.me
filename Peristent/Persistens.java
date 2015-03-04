@@ -1,221 +1,255 @@
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.sql.*;
-import java.io.ByteArrayInputStream;
-import java.io.ObjectInputStream;
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.Date;
 
 public class Persistens {
 
-    private long UserId = 1000;
-    private long Resumeid = 1000000;
-
-    public void addResume(Resume resume, long UserId)
+    private long userCount = 0;
+    Connection con = null;
+    public Persistens()
     {
-        try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ByteArrayOutputStream b = new ByteArrayOutputStream();
-            ObjectOutputStream out = new ObjectOutputStream(b);
-            out.writeObject(resume);
-            byte[] ba = b.toByteArray();
-            String addStatement = "insert into Resumes (Resumeid, UserId, Resume) " +
-                                    "values('"+Resumeid+++"','"+UserId+"','"+ba+"')";
-            st.executeUpdate(addStatement);
-            con.commit();
-        }catch(Exception e) {
-            System.out.println("could not add your resume");
+        try{
+            Class.forName("org.gjt.mm.mysql.Driver");
+            con  = DriverManager.getConnection("jdbc:mysql://localhost:7000/rezudotme", "happy_torch", "2001033954");
+        }
+        catch(Exception e){
+            e.printStackTrace();
         }
     }
-
-    public void editResume(Resume newResume, long ResumeId)
+    public Persistens(String URL, String username, String password)
     {
-        String updateStatement = "UPDATE Resumes " +
-                                    "SET Resume = " + newResume +
-                                    " WHERE ResumeId = " + ResumeId;
-        try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            st.executeQuery(updateStatement);
-            con.commit();
-        }catch(Exception e) {
-            System.out.println("could not update your resume");
+        try{
+            Class.forName("org.gjt.mm.mysql.Driver");
+            con  = DriverManager.getConnection(URL, username, password);
+        }
+        catch(Exception e){
+            e.printStackTrace();
         }
     }
-
+    public long makeUserId()
+    {
+        Date date = Calendar.getInstance().getTime();
+        SimpleDateFormat format1 = new SimpleDateFormat("ddMMyyyy");
+        String date1 = format1.format(date);
+        if(++userCount > 99999999)
+        {
+            userCount = 1;
+        }
+        String num = userCount +""+ date1;
+        return Long.parseLong(num);
+    }
+    public long makeResumeId(long userId)
+    {
+        int count = getResumeCount(userId) + 1;
+        String num = count +""+ userId;
+        return Long.parseLong(num);
+    }
+    public void addResume(Resume resume, long userId)
+    {
+        try {
+            PreparedStatement pstmt = con.prepareStatement("INSERT INTO resumes(ResumeId, UserId, Resume) VALUES(?,?,?)");
+            pstmt.setLong(1,makeResumeId(userId));
+            pstmt.setLong(2,userId);
+            pstmt.setObject(3,resume);
+            pstmt.executeUpdate();
+            pstmt.close();
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void editResume(Resume newResume, long resumeId)
+    {
+        try {
+            PreparedStatement pstmt = con.prepareStatement("UPDATE resumes SET Resume = ? WHERE ResumeId = ?");
+            pstmt.setObject(1,newResume);
+            pstmt.setLong(2,resumeId);
+            pstmt.executeUpdate();
+            pstmt.close();
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public long getUserIdFromResume(long resumeId)
+    {
+        long result = 0;
+        try {
+            PreparedStatement pstmt = con.prepareStatement("SELECT UserId FROM Resumes WHERE ResumeId = ?");
+            pstmt.setLong(1, resumeId);
+            ResultSet rs = pstmt.executeQuery();
+            rs.next();
+            result = rs.getLong("UserId");
+            pstmt.close();
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
     public long getResumeId(Resume resume)
     {
+        long result = 0;
         try {
-            ByteArrayOutputStream b = new ByteArrayOutputStream();
-            ObjectOutputStream out = new ObjectOutputStream(b);
-            out.writeObject(resume);
-            byte[] ba = b.toByteArray();
-            String getStatement = "SELECT Resume from Resumes " +
-                    "WHERE Resume = " + ba;
-
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(getStatement);
-            con.commit();
-            return rs.getLong("ResumeId");
+            PreparedStatement pstmt = con.prepareStatement("SELECT ResumeId FROM Resumes WHERE Resume = ?");
+            pstmt.setObject(1, resume);
+            ResultSet rs = pstmt.executeQuery();
+            rs.next();
+            result = rs.getLong("ResumeId");
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not get your resume");
+            e.printStackTrace();
         }
-        return 0;
+        return result;
     }
-
-    public Resume getResume(long ResumeId)
+    public Resume getResume(long resumeId)
     {
-        String getStatement = "SELECT Resume from Resumes " +
-                                "WHERE ResumeId = " + ResumeId;
+        Resume result = null;
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(getStatement);
-            con.commit();
-            byte[] b = rs.getBytes("Resume");
-            ByteArrayInputStream bais = new ByteArrayInputStream(b);
-            ObjectInputStream o = new ObjectInputStream(bais);
-            return (Resume)o.readObject();
+            PreparedStatement pstmt = con.prepareStatement("SELECT Resume FROM resumes WHERE ResumeId = ?");
+            pstmt.setLong(1, resumeId);
+            ResultSet rs = pstmt.executeQuery();
+            rs.next();
+            result = deserialize(rs.getBytes("Resume"));
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not get your resume");
+            e.printStackTrace();
         }
-        return null;
+        return result;
     }
-
-    public Resume[] getResumes(long UserId)
+    private int getResumeCount(long userId)
     {
-        String getStatement = "SELECT Resume from Resumes " +
-                "WHERE ResumeId = " + UserId;
+        int count = 0;
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(getStatement);
-            con.commit();
-            ArrayList<Resume> resumes = new ArrayList<Resume>();
+            PreparedStatement pstmt = con.prepareStatement("SELECT Resume FROM resumes WHERE UserId = ?");
+            pstmt.setLong(1, userId);
+            ResultSet rs = pstmt.executeQuery();
             while(rs.next())
             {
-                byte[] b = rs.getBytes("Resume");
-                ByteArrayInputStream bais = new ByteArrayInputStream(b);
-                ObjectInputStream o = new ObjectInputStream(bais);
-                resumes.add((Resume)o.readObject());
+                if(count > 255)
+                    count = 0;
+                count++;
             }
-            return (Resume[])resumes.toArray();
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not get your resume");
+            e.printStackTrace();
         }
-        return null;
+        return count;
     }
-
-    public void deleteResume(long ResumeId)
+    public Map<Long,Resume> getResumes(long userId)
     {
-        String deleteStatement = "DELETE FROM Resumes " +
-                                "WHERE ResumeId = " + ResumeId;
+        Map<Long,Resume> resumes = new HashMap<Long, Resume>();
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            st.executeQuery(deleteStatement);
-            con.commit();
+            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM resumes WHERE UserId = ?");
+            pstmt.setLong(1, userId);
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next())
+            {
+                Resume r = deserialize(rs.getBytes("Resume"));
+                resumes.put(rs.getLong("ResumeId"), r);
+            }
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not remove your resume");
+            e.printStackTrace();
+        }
+        return resumes;
+    }
+    public void deleteResume(long resumeId)
+    {
+        try {
+            PreparedStatement pstmt = con.prepareStatement("DELETE FROM resumes WHERE ResumeId = ?");
+            pstmt.setLong(1,resumeId);
+            pstmt.executeUpdate();
+            pstmt.close();
+        }catch(Exception e) {
+            e.printStackTrace();
         }
     }
-
+    public void deleteResumes(long userId)
+    {
+        try {
+            PreparedStatement pstmt = con.prepareStatement("DELETE FROM resumes WHERE UserId = ?");
+            pstmt.setLong(1,userId);
+            pstmt.executeUpdate();
+            pstmt.close();
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
     public void addUser(User user)
     {
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ByteArrayOutputStream b = new ByteArrayOutputStream();
-            ObjectOutputStream out = new ObjectOutputStream(b);
-            out.writeObject(user);
-            byte[] ba = b.toByteArray();
-            String addStatement = "insert into Users (UserId, User) " +
-                    "values('"+UserId+++"','"+ba+"')";
-            st.executeUpdate(addStatement);
-            con.commit();
+            PreparedStatement pstmt = con.prepareStatement("INSERT INTO users (UserId, User) VALUES(?,?)");
+            pstmt.setLong(1,makeUserId());
+            pstmt.setObject(2, user);
+            pstmt.executeUpdate();
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not add your resume");
+            e.printStackTrace();
         }
     }
-
-    public void editResume(User newUser, long userId)
+    public void editUser(User newUser, long userId)
     {
-        String updateStatement = "UPDATE Users " +
-                "SET User = " + newUser +
-                " WHERE UserId = " + userId;
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            st.executeQuery(updateStatement);
-            con.commit();
+            PreparedStatement pstmt = con.prepareStatement("UPDATE users SET User = ? WHERE UserId = ?");
+            pstmt.setObject(1,newUser);
+            pstmt.setLong(2,userId);
+            pstmt.executeUpdate();
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not update your resume");
+            e.printStackTrace();
         }
     }
-
     public long getUserId(User user)
     {
+        long result = 0;
         try {
-            ByteArrayOutputStream b = new ByteArrayOutputStream();
-            ObjectOutputStream out = new ObjectOutputStream(b);
-            out.writeObject(user);
-            byte[] ba = b.toByteArray();
-            String getStatement = "SELECT User from Users " +
-                    "WHERE User = " + ba;
-
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(getStatement);
-            con.commit();
-            return rs.getLong("UserId");
+            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM Users WHERE User = ?");
+            pstmt.setObject(1, user);
+            ResultSet rs = pstmt.executeQuery();
+            rs.next();
+            result = rs.getLong("UserId");
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not get your resume");
+            e.printStackTrace();
         }
-        return 0;
+        return result;
     }
-
-    public User getUser(long UserId)
+    public User getUser(long userId)
     {
-        String getStatement = "SELECT User from Users " +
-                "WHERE UserId = " + UserId;
+        User result = null;
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(getStatement);
-            con.commit();
-            byte[] b = rs.getBytes("User");
-            ByteArrayInputStream bais = new ByteArrayInputStream(b);
-            ObjectInputStream o = new ObjectInputStream(bais);
-            return (User)o.readObject();
+            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM Users WHERE UserId = ?");
+            pstmt.setLong(1,userId);
+            ResultSet rs = pstmt.executeQuery();
+            rs.next();
+            result = deserialize(rs.getBytes("User"));
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not get your resume");
+            e.printStackTrace();
         }
-        return null;
+        return result;
     }
-
-    public void deleteUser(long UserId)
+    public void deleteUser(long userId)
     {
-        String deleteStatement = "DELETE FROM Users " +
-                "WHERE UserId = " + UserId;
         try {
-            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection("jdcb:odbc:DataPersistens");
-            Statement st = con.createStatement();
-            st.executeQuery(deleteStatement);
-            con.commit();
+            PreparedStatement pstmt = con.prepareStatement("DELETE FROM Users WHERE UserId = ?");
+            pstmt.setLong(1, userId);
+            pstmt.executeUpdate();
+            pstmt.close();
         }catch(Exception e) {
-            System.out.println("could not remove your resume");
+            e.printStackTrace();
         }
+    }
+    public <T> T deserialize(byte[] bytes)
+    {
+        T result = null;
+        try {
+            ByteArrayInputStream b = new ByteArrayInputStream(bytes);
+            ObjectInputStream o = new ObjectInputStream(b);
+            result = (T)o.readObject();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }
