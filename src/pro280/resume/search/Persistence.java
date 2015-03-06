@@ -1,14 +1,25 @@
-import java.io.*;
-import java.sql.*;
+package pro280.resume.search;
+import java.io.ByteArrayInputStream;
+import java.io.ObjectInputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Persistens {
+import javax.xml.registry.infomodel.User;
+
+import pro280.resume.model.Resume;
+
+public class Persistence {
 
     private long userCount = 0;
     Connection con = null;
-    public Persistens()
+    public Persistence()
     {
         try{
             Class.forName("org.gjt.mm.mysql.Driver");
@@ -18,7 +29,7 @@ public class Persistens {
             e.printStackTrace();
         }
     }
-    public Persistens(String URL, String username, String password)
+    public Persistence(String URL, String username, String password)
     {
         try{
             Class.forName("org.gjt.mm.mysql.Driver");
