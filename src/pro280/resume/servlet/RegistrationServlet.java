@@ -21,7 +21,7 @@ import pro280.resume.model.User;
  * Servlet implementation class Registration
  */
 @WebServlet("/Registration/*")
-public class Registration extends HttpServlet {
+public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private String skills;
@@ -36,7 +36,7 @@ public class Registration extends HttpServlet {
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public Registration() {
+	public RegistrationServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
