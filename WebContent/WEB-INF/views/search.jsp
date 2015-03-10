@@ -8,7 +8,7 @@
 </head>
 <body>
 	<p>Search for an employee/employer</p>
-	<form action="http://localhost:8080/search_results_testing/search" method="post">
+	<form action="/search" method="post">
 		Search by skills: <input type="text" name="skillsToSearch"/>
 		Search by location: <input type="text" name="locationToSearch"/>
 		<input type="submit" value="Search"/>
