@@ -49,7 +49,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `resume_db`.`employees` (
   `employee_id` INT NOT NULL,
   `skillset` VARCHAR(2000) NOT NULL,
-  CONSTRAINT `user_id`
+  CONSTRAINT `employee_user_id`
     FOREIGN KEY (`employee_id`)
     REFERENCES `resume_db`.`users` (`user_id`)
     ON DELETE NO ACTION
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `resume_db`.`employers` (
   `listing` INT NULL,
   INDEX `user_id_idx` (`employer_id` ASC),
   INDEX `listing_id_idx` (`listing` ASC),
-  CONSTRAINT `user_id`
+  CONSTRAINT `employer_user_id`
     FOREIGN KEY (`employer_id`)
     REFERENCES `resume_db`.`users` (`user_id`)
     ON DELETE NO ACTION
