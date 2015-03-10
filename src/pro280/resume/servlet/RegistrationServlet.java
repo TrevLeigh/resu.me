@@ -155,7 +155,7 @@ public class RegistrationServlet extends HttpServlet {
 			user.setUsername(request.getParameter("username"));
 
 			registerUser();
-			response.sendRedirect(request.getContextPath() + "/Registration/login");
+			response.sendRedirect("/Registration/login");
 		}
 		
 		else if(mi.find()){
@@ -169,7 +169,7 @@ public class RegistrationServlet extends HttpServlet {
 			user.setSkills("");
 			user.getName();
 			
-			response.sendRedirect(request.getContextPath() + "/Registration/success");
+			response.sendRedirect("/Registration/success");
 		}
 		
 		else if(mat.find()){

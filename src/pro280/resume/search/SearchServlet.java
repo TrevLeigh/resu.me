@@ -63,7 +63,7 @@ public class SearchServlet extends HttpServlet {
 			Connection con = connectToDB("root", "admin");
 			
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("SELECT id, name, skills FROM User WHERE skills LIKE \'%" + queryParam + "%\';");
+			ResultSet rs = stmt.executeQuery("SELECT id, name, skills FROM users WHERE skills LIKE \'%" + queryParam + "%\';");
 			
 			while (rs.next()) 
 			{
