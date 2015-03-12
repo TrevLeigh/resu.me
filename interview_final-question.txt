@@ -1,0 +1,32 @@
+Question for Final Interview: Create a Stack Overflow like website
+
+-Anyone can ask and upvote/downvote a question, anyone can ask and vote up an answer
+-Badges/privileges awarded based on participation
+-Markup
+-Can upload images as part of a question or answer
+-Search across questions and answers
+-Administrators can delete questions
+-Certain privileges to edit questions, etc.
+-Mark as duplicate
+-Handle editing conflicts
+
+Do the same as Stack Overflow, but with a wiki
+
+
+Needs
+--------
+
+Search - Caching/Pagination
+Authorization, Roles
+One to Many
+Images
+Resource Contention
+
+Wants
+--------
+
+Time Left Until
+
+
+
+REMEMBER TO LOOK AT LECTURE NOTES, BRING HAND WRITTEN NOTES TO FINAL INTERVIEW
