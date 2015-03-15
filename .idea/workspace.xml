@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcc28f0c-b876-4c00-9051-b80be3d8b99f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pro280/resume/search/Persistence.java" afterPath="$PROJECT_DIR$/src/pro280/resume/search/Persistence.java" />
+    </list>
+    <ignored path="build_a_resume.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DockManager">
+    <window id="6">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="Listing.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Listing.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.14702703" vertical-offset="0" max-vertical-offset="925">
+                    <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Employer.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Employer.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+                    <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Resume.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Resume.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="2352" max-vertical-offset="3264">
+                    <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+                    <folding>
+                      <element signature="e#1800#1801#0" expanded="true" />
+                      <element signature="e#1827#1828#0" expanded="true" />
+                      <element signature="e#1867#1868#0" expanded="true" />
+                      <element signature="e#1899#1900#0" expanded="true" />
+                      <element signature="e#1930#1931#0" expanded="true" />
+                      <element signature="e#1957#1958#0" expanded="true" />
+                      <element signature="e#1997#1998#0" expanded="true" />
+                      <element signature="e#2029#2030#0" expanded="true" />
+                      <element signature="e#2062#2063#0" expanded="true" />
+                      <element signature="e#2091#2092#0" expanded="true" />
+                      <element signature="e#2135#2136#0" expanded="true" />
+                      <element signature="e#2171#2172#0" expanded="true" />
+                      <element signature="e#2202#2203#0" expanded="true" />
+                      <element signature="e#2229#2230#0" expanded="true" />
+                      <element signature="e#2269#2270#0" expanded="true" />
+                      <element signature="e#2301#2302#0" expanded="true" />
+                      <element signature="e#2333#2334#0" expanded="true" />
+                      <element signature="e#2361#2362#0" expanded="true" />
+                      <element signature="e#2403#2404#0" expanded="true" />
+                      <element signature="e#2437#2438#0" expanded="true" />
+                      <element signature="e#2464#2465#0" expanded="true" />
+                      <element signature="e#2490#2491#0" expanded="true" />
+                      <element signature="e#2525#2526#0" expanded="true" />
+                      <element signature="e#2555#2556#0" expanded="true" />
+                      <element signature="e#2591#2592#0" expanded="true" />
+                      <element signature="e#2623#2624#0" expanded="true" />
+                      <element signature="e#2673#2674#0" expanded="true" />
+                      <element signature="e#2715#2716#0" expanded="true" />
+                      <element signature="e#2751#2752#0" expanded="true" />
+                      <element signature="e#2783#2784#0" expanded="true" />
+                      <element signature="e#2833#2834#0" expanded="true" />
+                      <element signature="e#2875#2876#0" expanded="true" />
+                      <element signature="e#2907#2908#0" expanded="true" />
+                      <element signature="e#2935#2936#0" expanded="true" />
+                      <element signature="e#2977#2978#0" expanded="true" />
+                      <element signature="e#3011#3012#0" expanded="true" />
+                      <element signature="e#3052#3053#0" expanded="true" />
+                      <element signature="e#3089#3090#0" expanded="true" />
+                      <element signature="e#3149#3150#0" expanded="true" />
+                      <element signature="e#3201#3202#0" expanded="true" />
+                      <element signature="e#3238#3239#0" expanded="true" />
+                      <element signature="e#3271#3272#0" expanded="true" />
+                      <element signature="e#3323#3324#0" expanded="true" />
+                      <element signature="e#3367#3368#0" expanded="true" />
+                      <element signature="e#3409#3410#0" expanded="true" />
+                      <element signature="e#3447#3448#0" expanded="true" />
+                      <element signature="e#3509#3510#0" expanded="true" />
+                      <element signature="e#3563#3564#0" expanded="true" />
+                      <element signature="e#3596#3597#0" expanded="true" />
+                      <element signature="e#3625#3626#0" expanded="true" />
+                      <element signature="e#3669#3670#0" expanded="true" />
+                      <element signature="e#3705#3706#0" expanded="true" />
+                      <element signature="e#3735#3736#0" expanded="true" />
+                      <element signature="e#3761#3762#0" expanded="true" />
+                      <element signature="e#3799#3800#0" expanded="true" />
+                      <element signature="e#3829#3830#0" expanded="true" />
+                      <element signature="e#3859#3860#0" expanded="true" />
+                      <element signature="e#3885#3886#0" expanded="true" />
+                      <element signature="e#3923#3924#0" expanded="true" />
+                      <element signature="e#3953#3954#0" expanded="true" />
+                      <element signature="e#3980#3981#0" expanded="true" />
+                      <element signature="e#4005#4006#0" expanded="true" />
+                      <element signature="e#4039#4040#0" expanded="true" />
+                      <element signature="e#4067#4068#0" expanded="true" />
+                      <element signature="e#4100#4101#0" expanded="true" />
+                      <element signature="e#4131#4132#0" expanded="true" />
+                      <element signature="e#4177#4178#0" expanded="true" />
+                      <element signature="e#4212#4213#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Employee.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+                    <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Location.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+                    <caret line="6" column="24" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="24" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/User.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+                    <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Persistence.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="1166" max-vertical-offset="2091">
+                    <caret line="511" column="5" selection-start-line="511" selection-start-column="5" selection-end-line="511" selection-end-column="5" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+                      <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+                      <element signature="e#3799#3813#0" expanded="true" />
+                      <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#addUser#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#addListing#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#editListing#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getListingId#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#getListing#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#deleteListing#0;class#Persistence#0" expanded="false" />
+                      <element signature="method#deserialize#0;class#Persistence#0" expanded="false" />
+                      <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+                      <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+                      <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+                      <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+                      <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+                      <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+                      <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+                      <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+                      <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+                      <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+                      <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+                      <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+                      <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+                      <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+                      <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+                      <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+                      <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+                      <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+                      <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+                      <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+                      <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+                      <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+                      <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+                      <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+                      <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+                      <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+                      <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="build_a_resume" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Persistence.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.52880186" vertical-offset="2261" max-vertical-offset="3706">
+              <caret line="577" column="63" selection-start-line="577" selection-start-column="63" selection-end-line="577" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+                <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+                <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+                <element signature="e#3799#3813#0" expanded="true" />
+                <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+                <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+                <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+                <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+                <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+                <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+                <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+                <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+                <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+                <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+                <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+                <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+                <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+                <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+                <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+                <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+                <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+                <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+                <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+                <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+                <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+                <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+                <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+                <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+                <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+                <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+                <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+                <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+                <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+                <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+                <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+                <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+                <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+                <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+                <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+                <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+                <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+                <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+                <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+                <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+                <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/pro280/resume/search/SearchServlet.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/servlet/RegistrationServlet.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/model/User.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/model/Location.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/model/Employer.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/model/Employee.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/model/Listings.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/model/Resume.java" />
+        <option value="$PROJECT_DIR$/src/pro280/resume/search/Persistence.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
+    <option name="y" value="40" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build_a_resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build_a_resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resu.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build_a_resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resu.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build_a_resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resu.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build_a_resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resu.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+  </component>
+  <component name="RunManager" selected="TomEE Server.tomee">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tomee" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 7.0.121" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="build_a_resume:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_build_a_resume" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62002" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="build_a_resume:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="TomEE Server.tomee" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcc28f0c-b876-4c00-9051-b80be3d8b99f" name="Default" comment="" />
+      <created>1425689463819</created>
+      <option name="number" value="Default" />
+      <updated>1425689463819</updated>
+      <workItem from="1425689470509" duration="4499000" />
+      <workItem from="1426030112615" duration="2602000" />
+      <workItem from="1426044223091" duration="42000" />
+      <workItem from="1426117040884" duration="5195000" />
+      <workItem from="1426313064113" duration="17644000" />
+      <workItem from="1426377488638" duration="10059000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="40041000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="960" y="40" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java</url>
+          <line>281</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java</url>
+          <line>170</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+            <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="e#3799#3813#0" expanded="true" />
+            <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+            <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+            <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+            <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+            <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+            <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+            <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+            <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+            <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+            <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Listing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="935">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="833">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+            <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="e#3799#3813#0" expanded="true" />
+            <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+            <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+            <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+            <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+            <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+            <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+            <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+            <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+            <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+            <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/SearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1342" max-vertical-offset="2210">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="3043">
+          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/ResumeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="578">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Resume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1768">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2202#2203#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2525#2526#0" expanded="true" />
+            <element signature="e#2555#2556#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2907#2908#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
+            <element signature="e#3011#3012#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
+            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3271#3272#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3409#3410#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3625#3626#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3735#3736#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3829#3830#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#3885#3886#0" expanded="true" />
+            <element signature="e#3923#3924#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="e#3980#3981#0" expanded="true" />
+            <element signature="e#4005#4006#0" expanded="true" />
+            <element signature="e#4039#4040#0" expanded="true" />
+            <element signature="e#4067#4068#0" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4131#4132#0" expanded="true" />
+            <element signature="e#4177#4178#0" expanded="true" />
+            <element signature="e#4212#4213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="4573">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+            <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="e#3799#3813#0" expanded="true" />
+            <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+            <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+            <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+            <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+            <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+            <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+            <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+            <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+            <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+            <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/SearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2210">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="3043">
+          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/ResumeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="578">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Resume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1768">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2202#2203#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2525#2526#0" expanded="true" />
+            <element signature="e#2555#2556#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2907#2908#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
+            <element signature="e#3011#3012#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
+            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3271#3272#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3409#3410#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3625#3626#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3735#3736#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3829#3830#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#3885#3886#0" expanded="true" />
+            <element signature="e#3923#3924#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="e#3980#3981#0" expanded="true" />
+            <element signature="e#4005#4006#0" expanded="true" />
+            <element signature="e#4039#4040#0" expanded="true" />
+            <element signature="e#4067#4068#0" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4131#4132#0" expanded="true" />
+            <element signature="e#4177#4178#0" expanded="true" />
+            <element signature="e#4212#4213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="4573">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+            <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="e#3799#3813#0" expanded="true" />
+            <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+            <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+            <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+            <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+            <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+            <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+            <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+            <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+            <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+            <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/SearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2210">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="680">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3043">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/ResumeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1683">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="4369">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+            <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="e#3799#3813#0" expanded="true" />
+            <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+            <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+            <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+            <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+            <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+            <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+            <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+            <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+            <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+            <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/views/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/views/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/ResumeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.50691247" vertical-offset="593" max-vertical-offset="1683">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/servlet/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.09792627" vertical-offset="340" max-vertical-offset="2958">
+          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/SearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1342" max-vertical-offset="2210">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Employer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Resume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="3264">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2202#2203#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2525#2526#0" expanded="true" />
+            <element signature="e#2555#2556#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2907#2908#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
+            <element signature="e#3011#3012#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
+            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3271#3272#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3409#3410#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3625#3626#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3735#3736#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3829#3830#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#3885#3886#0" expanded="true" />
+            <element signature="e#3923#3924#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="e#3980#3981#0" expanded="true" />
+            <element signature="e#4005#4006#0" expanded="true" />
+            <element signature="e#4039#4040#0" expanded="true" />
+            <element signature="e#4067#4068#0" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4131#4132#0" expanded="true" />
+            <element signature="e#4177#4178#0" expanded="true" />
+            <element signature="e#4212#4213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/model/Listing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14702703" vertical-offset="0" max-vertical-offset="925">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pro280/resume/search/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52880186" vertical-offset="2261" max-vertical-offset="3706">
+          <caret line="577" column="63" selection-start-line="577" selection-start-column="63" selection-end-line="577" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Persistence#1;class#Persistence#0" expanded="false" />
+            <element signature="method#addResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumeCount#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="e#3799#3813#0" expanded="true" />
+            <element signature="method#deleteResume#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteResumes#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUserId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteUser#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployeeId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployee#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#editEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployerId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#deleteEmployer#0;class#Persistence#0" expanded="false" />
+            <element signature="method#addLocation#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocationId#0;class#Persistence#0" expanded="false" />
+            <element signature="method#getLocation#0;class#Persistence#0" expanded="false" />
+            <marker date="1426446984466" expanded="true" signature="885:965" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="1438:1528" placeholder="UPDATE resum..." />
+            <marker date="1426446984466" expanded="true" signature="1922:2009" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="2473:2555" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3187:3272" placeholder="SELECT Resum..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="3845:3925" placeholder="SELECT * FRO..resumes..." />
+            <marker date="1426446984466" expanded="true" signature="4564:4623" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="4952:5011" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="5330:5423" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="6158:6286" placeholder="UPDATE users..." />
+            <marker date="1426446984466" expanded="true" signature="7045:7242" placeholder="SELECT UserI..users..." />
+            <marker date="1426446984466" expanded="true" signature="7880:7958" placeholder="SELECT * FRO..users..." />
+            <marker date="1426446984466" expanded="true" signature="8674:8729" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="9259:9333" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="10541:10627" placeholder="SELECT Skill..employees..." />
+            <marker date="1426446984466" expanded="true" signature="11243:11302" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="11793:11873" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="12625:12724" placeholder="UPDATE emplo..." />
+            <marker date="1426446984466" expanded="true" signature="13403:13499" placeholder="SELECT Compa..employers..." />
+            <marker date="1426446984466" expanded="true" signature="13998:14061" placeholder="DELETE FROM ..." />
+            <marker date="1426446984466" expanded="true" signature="14395:14485" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="15075:15273" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="15907:15993" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="16721:16836" placeholder="INSERT INTO ..." />
+            <marker date="1426446984466" expanded="true" signature="17904:18059" placeholder="UPDATE locat..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18924" placeholder="SELECT Locat..locations..." />
+            <marker date="1426446984466" expanded="true" signature="18715:18943" placeholder="SELECT Listi..locations..." />
+            <marker date="1426446984466" expanded="true" signature="19596:19682" placeholder="SELECT * FRO..locations..." />
+            <marker date="1426446984466" expanded="true" signature="20120:20183" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>build_a_resume:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>build_a_resume</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Java EE 6-Java EE 6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

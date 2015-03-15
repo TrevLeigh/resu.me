@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="build_a_resume:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/build_a_resume_war_exploded</output-path>
+    <root id="root" />
+  </artifact>
+</component>

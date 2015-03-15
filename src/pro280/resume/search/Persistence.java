@@ -553,7 +553,8 @@ public class Persistence {
             p.setString(2, newListing.getPosition());
             p.setString(3, newListing.getDescription());
             p.setLong(4, getLocationId(newListing.getLocation()));
-            p.setLong(6, getEmployerId(newListing.getEmployer()));
+            p.setLong(5, getEmployerId(newListing.getEmployer()));
+            p.setLong(6, listingId);
             p.executeUpdate();
             p.close();
         } catch (Exception e) {
@@ -561,20 +562,20 @@ public class Persistence {
         }
     }
 
-    public Long getListingId(Listing location) {
+    public Long getListingId(Listing listing) {
         Long result = 0l;
-        String statement = "SELECT LocationId " +
+        String statement = "SELECT ListingId " +
                 "FROM locations " +
-                "WHERE Address = ? " +
-                "AND State = ? " +
-                "AND City = ? " +
-                "AND ZipCode = ?";
+                "WHERE Salary = ? " +
+                "AND Position = ? " +
+                "AND Description = ? " +
+                "AND LocationId = ? AND EmployerId = ?";
         try {
             PreparedStatement p = con.prepareStatement(statement);
-            p.setString(1, location.getAddress());
-            p.setString(2, location.getState());
-            p.setString(3, location.getCity());
-            p.setInt(4, location.getZipcode());
+            p.setString(1, listing.getSalary());
+            p.setString(2, listing.getPosition());
+            p.setString(3, listing.getDescription());
+            p.setLong(4, getLocationId(listing.getLocation()));
             ResultSet rs = p.executeQuery();
             rs.next();
             result = rs.getLong("LocationId");
