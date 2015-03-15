@@ -1,60 +1,33 @@
 package pro280.resume.model;
 
-import java.util.Arrays;
-import java.util.List;
-
-public class Employer
+public class Employer extends User
 {
-	private final Long ID;
-	private String name;
-	private List<String> skillsLookingFor;
-	public Location location;
-	
-	public Employer(Long ID)
+	private String companyName;
+
+	public Employer(String companyName)
 	{
-		this.ID = ID;
+		this.companyName = companyName;
+	}
+
+	public Employer(String companyName, User user)
+	{
+		super(user.getId(), user.getName(), user.getUsername(), user.getPassword(), user.getLocation());
+		this.companyName = companyName;
+	}
+
+	public Employer(Long ID, String companyName, String name, String username, String password, Location location)
+	{
+		super(ID, name, username, password, location);
+		this.companyName = companyName;
 	}
 	
-	public Employer(Long ID, String name, String[] skillsLookingFor, Location location)
+	public void setCompanyName(String name)
 	{
-		this.ID = ID;
-		this.name = name;
-		this.skillsLookingFor = Arrays.asList(skillsLookingFor);
-		this.location = location;
+		this.companyName = name;
 	}
 	
-	public Long getID()
+	public String getCompanyName()
 	{
-		return ID;
-	}
-	
-	public void setName(String name)
-	{
-		this.name = name;
-	}
-	
-	public String getName()
-	{
-		return name;
-	}
-	
-	public void setSkillsLookingFor(List<String> skillsLookingFor)
-	{
-		this.skillsLookingFor = skillsLookingFor;
-	}
-	
-	public List<String> getSkillsLookingFor()
-	{
-		return skillsLookingFor;
-	}
-	
-	public Location getLocation()
-	{
-		return location;
-	}
-	
-	public void setLocation(Location location)
-	{
-		this.location = location;
+		return companyName;
 	}
 }

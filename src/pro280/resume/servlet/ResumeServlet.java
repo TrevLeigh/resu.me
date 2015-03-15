@@ -47,7 +47,7 @@ public class ResumeServlet extends HttpServlet {
 
 	Resume resume = new Resume(text,name,street,city,state,zip,homePhone,cellPhone,email,qualifications, techSkills,accomplishments, workEx, edu,key);
 
-	private Pattern RESUME_VIEW = Pattern.compile("/resu.me/Resume");
+	private Pattern RESUME_VIEW = Pattern.compile("/resume/Resume");
 
 
 	/**
@@ -75,7 +75,7 @@ public class ResumeServlet extends HttpServlet {
 		String uri = request.getRequestURI();
 		Matcher m = RESUME_VIEW.matcher(uri);
 		if(m.find()){
-			response.sendRedirect(request.getContextPath() + "/resu.me/edit");
+			response.sendRedirect(request.getContextPath() + "/resume/edit");
 		}
 		else if(request.getPathInfo().endsWith("edit")){
 			resume.setText(request.getParameter("user_content"));
@@ -96,7 +96,7 @@ public class ResumeServlet extends HttpServlet {
 
 
 			request.setAttribute("resume", resume);
-			response.sendRedirect(request.getContextPath() + "/resu.me/Resume");
+			response.sendRedirect(request.getContextPath() + "/resume/Resume");
 		}
 
 	}

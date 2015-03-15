@@ -3,39 +3,27 @@ package pro280.resume.model;
 import java.util.Arrays;
 import java.util.List;
 
-public class Employee
+public class Employee extends User
 {
-	private final Long ID;
-	private String name;
 	private List<String> skillSet;
-	private Location location;
 	
-	public Employee(Long ID)
+	public Employee(String[] skillSet)
 	{
-		this.ID = ID;
-	}
-	
-	public Employee(Long ID, String name, String[] skillSet)
-	{
-		this.ID = ID;
-		this.name = name;
 		this.skillSet = Arrays.asList(skillSet);
 	}
-	
-	public Long getID()
+
+	public Employee(User user, List<String> skillSet)
 	{
-		return ID;
+		super(user.getId(),user.getName(),user.getUsername(),user.getPassword(),user.getLocation());
+		this.skillSet = skillSet;
 	}
-	
-	public void setName(String name)
+
+	public Employee(Long ID, String name, String username, String password, Location location, List<String> skillSet)
 	{
-		this.name = name;
+		super(ID,name,username,password,location);
+		this.skillSet = skillSet;
 	}
-	
-	public String getName()
-	{
-		return name;
-	}
+
 	
 	public void setSkills(List<String> skills)
 	{
@@ -45,15 +33,5 @@ public class Employee
 	public List<String> getSkills()
 	{
 		return skillSet;
-	}
-	
-	public Location getLocation()
-	{
-		return location;
-	}
-	
-	public void setLocation(Location location)
-	{
-		this.location = location;
 	}
 }
