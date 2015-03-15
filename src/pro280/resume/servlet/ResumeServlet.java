@@ -17,7 +17,7 @@ import pro280.resume.model.Resume;
 /**
  * Servlet implementation class Resume
  */
-@WebServlet("/resu.me/*")
+@WebServlet("/resume/*")
 public class ResumeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

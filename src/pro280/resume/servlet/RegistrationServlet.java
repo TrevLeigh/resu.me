@@ -28,24 +28,16 @@ public class RegistrationServlet extends HttpServlet {
 	private String userName;
 	private String password;
 	private User user = new User(name, skills, userName, password);
-	private Pattern REGISTRAGION_VIEW = Pattern.compile("/Registration/reg");
-	private Pattern LOGIN_VIEW = Pattern.compile("/Registration/login");
+	private Pattern REGISTRATION_VIEW = Pattern.compile("/Registration/reg");
+//	private Pattern LOGIN_VIEW = Pattern.compile("/Registration/login");
 	private Pattern SUCCESS_VIEW = Pattern.compile("/Registration/success");
 	
-
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public RegistrationServlet() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 
-	private  Connection connectToDB(String username, String password)
+	private Connection connectToDB(String username, String password)
 	{
 		Connection con = null;
 
@@ -64,7 +56,7 @@ public class RegistrationServlet extends HttpServlet {
 		try
 		{
 			con = DriverManager.getConnection(
-					"jdbc:mysql://localhost/resu.me",
+					"jdbc:mysql://localhost/resume_db",
 					username,
 					password);
 		}
@@ -90,7 +82,7 @@ public class RegistrationServlet extends HttpServlet {
 			int i = ps.executeUpdate();
 			if(i>0)
 			{
-				System.out.println("You are sucessfully register");
+				System.out.println("You are sucessfully registered!");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -98,38 +90,16 @@ public class RegistrationServlet extends HttpServlet {
 		}
 	}
 	
-	private void logIn(String username, String password)
-	{
-			try {
-				Connection con = connectToDB("root","");
-				Statement ps = con.createStatement();
-				ResultSet result = ps.executeQuery("select * from User where username='" + username+"' and password='"+password+"'");
-				while(result.next()){
-					user.setName(result.getString("name"));
-					user.setPassword(result.getString("password"));
-					user.setSkills(result.getString("skills"));
-					user.setUsername(result.getString("username"));
-				}
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String uri = request.getRequestURI();
-		Matcher m = REGISTRAGION_VIEW.matcher(uri);
-		Matcher mi = LOGIN_VIEW.matcher(uri);
+		Matcher m = REGISTRATION_VIEW.matcher(uri);
 		Matcher mat = SUCCESS_VIEW.matcher(uri);
 			
 		if(m.find()){
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/register.jsp");
 			rd.forward(request, response);
 		}
-
-		else if(mi.find()){
-			RequestDispatcher red = request.getRequestDispatcher("/WEB-INF/views/login.jsp");
-			red.forward(request, response);
-		}
+		
 		else if(mat.find()){
 			request.setAttribute("user", user);
 			RequestDispatcher red = request.getRequestDispatcher("/WEB-INF/views/success.jsp");
@@ -144,8 +114,7 @@ public class RegistrationServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String uri = request.getRequestURI();
-		Matcher m = REGISTRAGION_VIEW.matcher(uri);
-		Matcher mi = LOGIN_VIEW.matcher(uri);
+		Matcher m = REGISTRATION_VIEW.matcher(uri);
 		Matcher mat = SUCCESS_VIEW.matcher(uri);
 
 		if(m.find()){
@@ -156,20 +125,6 @@ public class RegistrationServlet extends HttpServlet {
 
 			registerUser();
 			response.sendRedirect("/Registration/login");
-		}
-		
-		else if(mi.find()){
-			
-			user.setPassword(request.getParameter("password"));
-			user.setUsername(request.getParameter("username"));
-			
-			request.setAttribute("user", user);
-
-			logIn(user.getUsername(),user.getPassword());
-			user.setSkills("");
-			user.getName();
-			
-			response.sendRedirect("/Registration/success");
 		}
 		
 		else if(mat.find()){

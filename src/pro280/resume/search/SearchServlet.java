@@ -41,7 +41,7 @@ public class SearchServlet extends HttpServlet {
 		try
 		{
 			con = DriverManager.getConnection(
-						         "jdbc:mysql://localhost/resume",
+						         "jdbc:mysql://localhost/resume_db",
 								 username,
 								 password);
 		}
