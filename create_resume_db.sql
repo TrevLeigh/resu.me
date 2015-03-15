@@ -67,12 +67,8 @@ CREATE TABLE IF NOT EXISTS `resume_db`.`listings` (
   `description` VARCHAR(1000) NOT NULL,
   `location` INT NOT NULL,
   PRIMARY KEY (`listing_id`),
-  INDEX `location_id_idx` (`location` ASC),
-  CONSTRAINT `location_id`
-    FOREIGN KEY (`location`)
-    REFERENCES `resume_db`.`locations` (`location_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  INDEX `location_id_idx` (`location` ASC)
+  )
 ENGINE = InnoDB;
 
 

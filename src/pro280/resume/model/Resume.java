@@ -1,158 +1,186 @@
 package pro280.resume.model;
 
 public class Resume {
-	private String text;
-	private String name;
-	private String street;
-	private String city;
-	private String state;
-	private String zip;
-	private String homePhone;
-	private String cellPhone;
-	private String email;
-	private String qualifications;
-	private String techSkills;
-	private String accomplishments;
-	private String workEx;
-	private String edu;
-	private String key;
-	
-	public Resume(String text, String name, String street, String city, String state, String zip, String homePhone, String cellPhone, String email, String qualifications, String techSkills, String accomplishments, String workEx, String edu, String key){
-		this.text = text; 
-		this.name = name; 
-		this.street = street; 
-		this.city = city; 
-		this.state = state; 
-		this.zip = zip; 
-		this.homePhone = homePhone;
-		this.cellPhone = cellPhone; 
-		this.email = email; 
-		this.qualifications = qualifications; 
-		this.techSkills = techSkills; 
-		this.accomplishments = accomplishments; 
-		this.workEx = workEx; 
-		this.edu = edu; 
-		this.key = key;
-		
-	}
+    private Long ID;
+    private Long AuthorID;
+    private String text;
+    private String name;
+    private String street;
+    private String city;
+    private String state;
+    private int zip;
+    private String homePhone;
+    private String cellPhone;
+    private String email;
+    private String qualifications;
+    private String techSkills;
+    private String accomplishments;
+    private String workEx;
+    private String edu;
+    private String key;
 
-	public String getText() {
-		return text;
-	}
+    public Resume(String text, String name, String street, String city, String state, int zip, String homePhone,
+                  String cellPhone, String email, String qualifications, String techSkills, String accomplishments,
+                  String workEx, String edu, String key) {
+        this.text = text;
+        this.name = name;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.homePhone = homePhone;
+        this.cellPhone = cellPhone;
+        this.email = email;
+        this.qualifications = qualifications;
+        this.techSkills = techSkills;
+        this.accomplishments = accomplishments;
+        this.workEx = workEx;
+        this.edu = edu;
+        this.key = key;
+    }
 
-	public void setText(String text) {
-		this.text = text;
-	}
+    public Resume(Long ID, Long AuthorID, Resume resume) {
+        this(resume.getText(), resume.getName(), resume.getStreet(), resume.getCity(), resume.getState(),
+                resume.getZip(), resume.getHomePhone(), resume.getCellPhone(), resume.getEmail(),
+                resume.getQualifications(), resume.getTechSkills(), resume.getAccomplishments(), resume.getWorkEx(),
+                resume.getEdu(), resume.getKey());
+        this.ID = ID;
+        this.AuthorID = AuthorID;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getText() {
+        return text;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setText(String text) {
+        this.text = text;
+    }
 
-	public String getStreet() {
-		return street;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setStreet(String street) {
-		this.street = street;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public String getStreet() {
+        return street;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public void setStreet(String street) {
+        this.street = street;
+    }
 
-	public String getState() {
-		return state;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public String getZip() {
-		return zip;
-	}
+    public String getState() {
+        return state;
+    }
 
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
+    public void setState(String state) {
+        this.state = state;
+    }
 
-	public String getHomePhone() {
-		return homePhone;
-	}
+    public int getZip() {
+        return zip;
+    }
 
-	public void setHomePhone(String homePhone) {
-		this.homePhone = homePhone;
-	}
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
 
-	public String getCellPhone() {
-		return cellPhone;
-	}
+    public String getHomePhone() {
+        return homePhone;
+    }
 
-	public void setCellPhone(String cellPhone) {
-		this.cellPhone = cellPhone;
-	}
+    public void setHomePhone(String homePhone) {
+        this.homePhone = homePhone;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getCellPhone() {
+        return cellPhone;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void setCellPhone(String cellPhone) {
+        this.cellPhone = cellPhone;
+    }
 
-	public String getQualifications() {
-		return qualifications;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public void setQualifications(String qualifications) {
-		this.qualifications = qualifications;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public String getTechSkills() {
-		return techSkills;
-	}
+    public String getQualifications() {
+        return qualifications;
+    }
 
-	public void setTechSkills(String techSkills) {
-		this.techSkills = techSkills;
-	}
+    public void setQualifications(String qualifications) {
+        this.qualifications = qualifications;
+    }
 
-	public String getAccomplishments() {
-		return accomplishments;
-	}
+    public String getTechSkills() {
+        return techSkills;
+    }
 
-	public void setAccomplishments(String accomplishments) {
-		this.accomplishments = accomplishments;
-	}
+    public void setTechSkills(String techSkills) {
+        this.techSkills = techSkills;
+    }
 
-	public String getWorkEx() {
-		return workEx;
-	}
+    public String getAccomplishments() {
+        return accomplishments;
+    }
 
-	public void setWorkEx(String workEx) {
-		this.workEx = workEx;
-	}
+    public void setAccomplishments(String accomplishments) {
+        this.accomplishments = accomplishments;
+    }
 
-	public String getEdu() {
-		return edu;
-	}
+    public String getWorkEx() {
+        return workEx;
+    }
 
-	public void setEdu(String edu) {
-		this.edu = edu;
-	}
+    public void setWorkEx(String workEx) {
+        this.workEx = workEx;
+    }
 
-	public String getKey() {
-		return key;
-	}
+    public String getEdu() {
+        return edu;
+    }
 
-	public void setKey(String key) {
-		this.key = key;
-	}
+    public void setEdu(String edu) {
+        this.edu = edu;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public Long getID() {
+        return ID;
+    }
+
+    public void setID(Long ID) {
+        this.ID = ID;
+    }
+
+    public Long getAuthorID() {
+        return AuthorID;
+    }
+
+    public void setAuthorID(Long authorID) {
+        AuthorID = authorID;
+    }
 }

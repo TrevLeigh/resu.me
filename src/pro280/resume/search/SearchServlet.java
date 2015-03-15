@@ -135,6 +135,3 @@ public class SearchServlet extends HttpServlet {
 	}
 
 }
-
-//ResultSet rs = stmt.executeQuery(
-//		"SELECT latitude, longitude, SQRT(POW(69.1 * (latitude - " + lat + "), 2) +POW(69.1 * (" + lng + " - longitude) * COS(latitude / 57.3), 2)) AS distance FROM Listing HAVING distance < 50 ORDER BY distance;");

@@ -3,8 +3,6 @@ package pro280.resume.servlet;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,10 +22,10 @@ import pro280.resume.model.User;
 public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String name;
-	private String skills;
 	private String userName;
 	private String password;
-	private User user = new User(name, skills, userName, password);
+	private long LocationId;
+	private User user = new User(name, userName, password,LocationId);
 	private Pattern REGISTRAGION_VIEW = Pattern.compile("/Registration/reg");
 	private Pattern LOGIN_VIEW = Pattern.compile("/Registration/login");
 	private Pattern SUCCESS_VIEW = Pattern.compile("/Registration/success");
@@ -81,12 +79,11 @@ public class RegistrationServlet extends HttpServlet {
 		try {
 			Connection con = connectToDB("root","");
 			PreparedStatement ps;
-			ps = con.prepareStatement("insert into User values(?,?,?,?,?)");
+			ps = con.prepareStatement("insert into User values(?,?,?,?)");
 			ps.setString(1,"0");
 			ps.setString(2,user.getName());
-			ps.setString(3,user.getSkills());
-			ps.setString(4,user.getUsername());
-			ps.setString(5,user.getPassword());
+			ps.setString(3,user.getUsername());
+			ps.setString(4,user.getPassword());
 			int i = ps.executeUpdate();
 			if(i>0)
 			{
@@ -107,7 +104,6 @@ public class RegistrationServlet extends HttpServlet {
 				while(result.next()){
 					user.setName(result.getString("name"));
 					user.setPassword(result.getString("password"));
-					user.setSkills(result.getString("skills"));
 					user.setUsername(result.getString("username"));
 				}
 			} catch (SQLException e) {
@@ -151,7 +147,6 @@ public class RegistrationServlet extends HttpServlet {
 		if(m.find()){
 			user.setName(request.getParameter("name"));
 			user.setPassword(request.getParameter("password"));
-			user.setSkills(request.getParameter("skills"));
 			user.setUsername(request.getParameter("username"));
 
 			registerUser();
@@ -165,8 +160,7 @@ public class RegistrationServlet extends HttpServlet {
 			
 			request.setAttribute("user", user);
 
-			logIn(user.getUsername(),user.getPassword());
-			user.setSkills("");
+			logIn(user.getUsername(), user.getPassword());
 			user.getName();
 			
 			response.sendRedirect("/Registration/success");
@@ -175,7 +169,6 @@ public class RegistrationServlet extends HttpServlet {
 		else if(mat.find()){
 			user.getName();
 			user.getPassword();
-			user.getSkills();
 			user.getUsername();
 			request.setAttribute("user", user);
 			response.sendRedirect(request.getContextPath() + "/Registration/login");

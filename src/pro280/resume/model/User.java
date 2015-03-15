@@ -1,16 +1,24 @@
 package pro280.resume.model;
 
 public class User {
-	private String name; 
-	private String skills;
+	private Long Id;
+	private String name;
 	private String username;
 	private String password;
-	
-	public User(String name, String skills, String username, String password ){
+	private Location location;
+
+	public User(){}
+
+	public User(Long ID, String name, String username, String password, Location location){
+		this(name, username, password, location);
+		this.Id = ID;
+	}
+
+	public User(String name, String username, String password, Location location){
 		this.name = name;
-		this.skills = skills; 
 		this.username = username; 
 		this.password = password;
+		this.location = location;
 	}
 
 	public String getName() {
@@ -19,14 +27,6 @@ public class User {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getSkills() {
-		return skills;
-	}
-
-	public void setSkills(String skills) {
-		this.skills = skills;
 	}
 
 	public String getUsername() {
@@ -45,4 +45,15 @@ public class User {
 		this.password = password;
 	}
 
+	public Long getId() {
+		return Id;
+	}
+
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
+	}
 }
