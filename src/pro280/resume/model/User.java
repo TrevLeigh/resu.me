@@ -8,7 +8,7 @@ public class User {
 	private Location location;
 
 	public User(){}
-
+	
 	public User(Long ID, String name, String username, String password, Location location){
 		this(name, username, password, location);
 		this.Id = ID;

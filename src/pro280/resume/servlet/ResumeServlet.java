@@ -1,6 +1,5 @@
 package pro280.resume.servlet;
 
-
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,11 +12,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import pro280.resume.model.Resume;
+import pro280.resume.search.Persistence;
 
 /**
  * Servlet implementation class Resume
  */
-@WebServlet("/resume/*")
+@WebServlet("/resu.me/*")
 public class ResumeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -34,7 +34,7 @@ public class ResumeServlet extends HttpServlet {
 	private String street = "Street Address";
 	private String city = "City";
 	private String state = "State";
-	private String zip = "Zip";
+	private int zip;
 	private String homePhone = "Home Phone";
 	private String cellPhone = "Cell Phone";
 	private String email = "Email";
@@ -47,7 +47,7 @@ public class ResumeServlet extends HttpServlet {
 
 	Resume resume = new Resume(text,name,street,city,state,zip,homePhone,cellPhone,email,qualifications, techSkills,accomplishments, workEx, edu,key);
 
-	private Pattern RESUME_VIEW = Pattern.compile("/resume/Resume");
+	private Pattern RESUME_VIEW = Pattern.compile("/resu.me/Resume");
 
 
 	/**
@@ -75,7 +75,7 @@ public class ResumeServlet extends HttpServlet {
 		String uri = request.getRequestURI();
 		Matcher m = RESUME_VIEW.matcher(uri);
 		if(m.find()){
-			response.sendRedirect(request.getContextPath() + "/resume/edit");
+			response.sendRedirect(request.getContextPath() + "/resu.me/edit");
 		}
 		else if(request.getPathInfo().endsWith("edit")){
 			resume.setText(request.getParameter("user_content"));
@@ -83,7 +83,7 @@ public class ResumeServlet extends HttpServlet {
 			resume.setStreet(request.getParameter("street"));
 			resume.setCity(request.getParameter("city"));
 			resume.setState(request.getParameter("state"));
-			resume.setZip(request.getParameter("zip"));
+			resume.setZip(Integer.parseInt(request.getParameter("zip")));
 			resume.setHomePhone(request.getParameter("home"));
 			resume.setCellPhone(request.getParameter("cell"));
 			resume.setEmail(request.getParameter("email"));
@@ -96,7 +96,12 @@ public class ResumeServlet extends HttpServlet {
 
 
 			request.setAttribute("resume", resume);
-			response.sendRedirect(request.getContextPath() + "/resume/Resume");
+			response.sendRedirect(request.getContextPath() + "/resu.me/Resume");
+		}
+		else if(request.getPathInfo().endsWith("save")){
+			Persistence per = new Persistence();
+			per.addResume(resume,resume.getID());
+			
 		}
 
 	}

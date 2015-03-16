@@ -57,6 +57,10 @@
 		</div>
 	</div>
 	<input type="submit" value="Edit" />
-</form>
+	</form>
+	<form  method="post"  action="${pageContext.request.contextPath}/resu.me/save">
+	<input type="submit" value="Save"/>
+	</form>
+
 </body>
 </html>

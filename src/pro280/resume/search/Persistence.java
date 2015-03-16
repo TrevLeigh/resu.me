@@ -16,7 +16,7 @@ public class Persistence {
     Connection con = null;
 
     public Persistence() {
-        this("jdbc:mysql://localhost:7000/rezudotme", "happy_torch", "2001033954");
+        this("jdbc:mysql://localhost/resume_db", "root", "admin");
     }
 
     public Persistence(String URL, String username, String password) {
@@ -29,7 +29,7 @@ public class Persistence {
     }
 
     public Long addResume(Resume resume, Long AuthorId) {
-        String statement = "INSERT INTO resumes(resume_id, author_id, resume) " +
+        String statement = "INSERT INTO resumes(author_id, resume) " +
                 "VALUES(?,?)";
         Long result = 0l;
         try {

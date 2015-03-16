@@ -1,7 +1,10 @@
 package pro280.resume.model;
 
-public class Resume {
-    private Long ID;
+import java.io.Serializable;
+
+public class Resume implements Serializable {
+	private static final long serialVersionUID = -3099909507088772108L;
+	private static Long ID;
     private Long AuthorID;
     private String text;
     private String name;
@@ -22,6 +25,7 @@ public class Resume {
     public Resume(String text, String name, String street, String city, String state, int zip, String homePhone,
                   String cellPhone, String email, String qualifications, String techSkills, String accomplishments,
                   String workEx, String edu, String key) {
+    	this.ID = (long)Math.floor(Math.random() * 10000 + 100);
         this.text = text;
         this.name = name;
         this.street = street;

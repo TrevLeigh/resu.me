@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import pro280.resume.model.Location;
 import pro280.resume.model.User;
 
 /**
@@ -55,7 +56,12 @@ public class LoginServlet extends HttpServlet {
 			Statement ps = con.createStatement();
 			ResultSet result = ps.executeQuery("select * from User where username='" + username+"' and password='"+password+"'");
 			while(result.next()) {
-				userToReturn = new User(result.getLong("user_id"), result.getString("name"), result.getString("password"), result.getString("skills"), result.getString("username"));
+				if(result.getObject("location") == null)
+				{
+					userToReturn = new User(result.getLong("user_id"), result.getString("name"), result.getString("username"), result.getString("password"), new Location("143 S. Main St.", "UT", "Salt Lake City", 84101));
+				}
+				
+				userToReturn = new User(result.getLong("user_id"), result.getString("name"), result.getString("username"), result.getString("password"), (Location)result.getObject("location"));
 //				userToReturn.setName(result.getString("name"));
 //				userToReturn.setPassword(result.getString("password"));
 //				userToReturn.setSkills(result.getString("skills"));
