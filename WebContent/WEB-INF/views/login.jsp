@@ -6,9 +6,8 @@
 <title>Log In</title>
 </head>
 <body>
-	<form method="post"
-		action="http://localhost:8080/Java2Lab2_Registration/Registration/login">
-		<input name="username "type="text" placeholder="username"> <input name="password" type="password"
+	<form method="post" action="${pageContext.request.contextPath}/Login" >
+		<input name="username" "type="text" placeholder="username"> <input name="password" type="password"
 			placeholder="password"> <input type="submit" value="Login">
 	</form>
 </body>

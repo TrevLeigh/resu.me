@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import pro280.resume.model.Location;
 import pro280.resume.model.User;
@@ -52,25 +53,21 @@ public class LoginServlet extends HttpServlet {
 	private User logIn(String username, String password) {
 		User userToReturn = null;
 		try {
-			Connection con = connectToDB("root","");
+			Connection con = connectToDB("root","admin");
 			Statement ps = con.createStatement();
-			ResultSet result = ps.executeQuery("select * from User where username='" + username+"' and password='"+password+"'");
+			ResultSet result = ps.executeQuery("select * from users where username='" + username+"' and password='"+password+"'");
 			while(result.next()) {
-				if(result.getObject("location") == null)
-				{
-					userToReturn = new User(result.getLong("user_id"), result.getString("name"), result.getString("username"), result.getString("password"), new Location("143 S. Main St.", "UT", "Salt Lake City", 84101));
-				}
+				userToReturn = new User(result.getLong("user_id"), result.getString("name"), result.getString("username"), result.getString("password"), new Location(result.getLong("location_id")));
 				
-				userToReturn = new User(result.getLong("user_id"), result.getString("name"), result.getString("username"), result.getString("password"), (Location)result.getObject("location"));
 //				userToReturn.setName(result.getString("name"));
 //				userToReturn.setPassword(result.getString("password"));
 //				userToReturn.setSkills(result.getString("skills"));
 //				userToReturn.setUsername(result.getString("username"));
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		return userToReturn;
 	}
 	
@@ -87,9 +84,20 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		User userInSession = logIn(request.getParameter("username"), request.getParameter("password"));
-		request.setAttribute("model", userInSession);
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/home.jsp");
-		rd.forward(request, response);
+		HttpSession session = request.getSession();
+		if(userInSession != null)
+		{
+			session.setAttribute("user_id", userInSession.getId());
+			session.setMaxInactiveInterval(600);
+			request.setAttribute("model", userInSession);
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/home.jsp");
+			rd.forward(request, response);
+		}
+		else
+		{
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/login.jsp");
+			rd.forward(request, response);
+		}
 	}
 }
 

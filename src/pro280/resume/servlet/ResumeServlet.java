@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import pro280.resume.model.Resume;
 import pro280.resume.search.Persistence;
@@ -72,6 +73,7 @@ public class ResumeServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
 		String uri = request.getRequestURI();
 		Matcher m = RESUME_VIEW.matcher(uri);
 		if(m.find()){
@@ -100,8 +102,8 @@ public class ResumeServlet extends HttpServlet {
 		}
 		else if(request.getPathInfo().endsWith("save")){
 			Persistence per = new Persistence();
-			per.addResume(resume,resume.getID());
-			
+			per.addResume(resume,(Long)session.getAttribute("user_id"));
+			response.sendRedirect(request.getContextPath() + "/home");
 		}
 
 	}

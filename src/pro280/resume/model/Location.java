@@ -8,6 +8,11 @@ public class Location
 	private String city;
 	private int zipcode;
 	
+	public Location(Long ID)
+	{
+		this.ID = ID;
+	}
+	
 	public Location(String address, String state, String city, int zipcode)
 	{
 		this.address = address;
